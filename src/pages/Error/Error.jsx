@@ -1,7 +1,7 @@
 
-function HelloWorldError () {
+function Error () {
     return <h1> HelloWorld Error</h1>
 
 
 }
-export default HelloWorldError
+export default Error

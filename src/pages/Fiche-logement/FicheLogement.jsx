@@ -1,6 +1,6 @@
-function HelloWorldFicheLogement () {
+function LocationPage () {
     return <h1> HelloWorld Fiche logement</h1>
 
 
 }
-export default HelloWorldFicheLogement
+export default LocationPage

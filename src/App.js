@@ -1,11 +1,11 @@
-import './style/variables.scss';
-import HelloWorld from './components/helloWorld'
+import React from "react";
+import RouterApp from "./pages/router";
 
 function App() {
   return (
-    <div className="App">
-       <HelloWorld />
-    </div>
+    <>
+            <RouterApp />
+         </>
   );
 }
 
