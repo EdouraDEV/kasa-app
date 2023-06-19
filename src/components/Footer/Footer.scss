@@ -6,6 +6,7 @@
     justify-content: center;
     flex-wrap: wrap;
     background: black;
+    font-size: 24px;
   
     &_BigDiv {
       display: flex;
@@ -13,11 +14,44 @@
       width: 100%;
     }
     &_Img {
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
     }
     color: white;
     &_content {
-      padding: 20px;
+      padding-top: 0px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
     }
+  }
+  @media screen and (max-width: 400px) {
+    .ImgFooterDiv {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: black;
+    font-size: 12px;
+  
+    &_BigDiv {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    &_Img {
+      width: 100px;
+      height: 100px;
+    }
+    color: white;
+    &_content {
+      padding-top: 0px;
+      padding-bottom: 20px;
+      padding-right: 0px;
+      padding-left: 30px;
+      width: 120px;
+    }
+  }
   }

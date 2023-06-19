@@ -7,8 +7,6 @@ import {useEffect} from "react";
 function Footer() {
 
     useEffect(() => {
-        // 👇️ scroll to top on page load
-        // ajout du scroll top au clique sur le logo present dans le footer
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     }, []);
 

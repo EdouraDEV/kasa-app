@@ -1,5 +1,4 @@
 import React from 'react';
-// 👇️ import Routes instead of Switch 👇️
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import About from './A-propos/APropos';
 import Error from './Error/Error';
