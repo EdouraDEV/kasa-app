@@ -4,7 +4,6 @@ import "../../pages/A-propos/APropos.scss"
 import Banner from '../../components/Banner/Banner';
 import {stockData} from "../../components/About_Components/AboutText/AboutText";
 import Footer from "../../components/Footer/Footer";
-import ImageSource from "../../Asset/image bandeau montagne.png";
 
 function About() {
 
@@ -19,7 +18,6 @@ function About() {
                     <Banner />
                 </div>
                 <div className="MainDivImg">
-                    <img src={ImageSource} alt="ClimbTwo" className="ClimbTwo" />
                     <div className="ClimbTwo"></div>
                 </div>
                 {}
@@ -62,8 +60,8 @@ function About() {
                         )
                     })}
                 </div>
-            </div>
-            <Footer />
+            </div> 
+           <Footer />                          
         </div>
 
     );

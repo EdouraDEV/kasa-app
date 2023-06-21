@@ -80,17 +80,18 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 }
-// media init
+
+
 
 @media screen and (max-width: 400px) {
   .BigContent {
     width: unset;
     height: unset;
-    min-height: unset;
+    min-height: 100vh;
     margin: auto;
     padding: unset;
     &_PartOne {
-      margin-bottom: 170px;
+      margin-bottom: 155px;
     }
     &_Main {
       width: 100px;
@@ -108,7 +109,7 @@ body::-webkit-scrollbar {
       margin-left: 15px;
       padding: unset;
       position: absolute;
-      bottom: -40px;
+      bottom: 235px;
     }
     &_TitleHost_SubTitle {
       font-size: 15px;
@@ -131,7 +132,9 @@ body::-webkit-scrollbar {
      border-radius: 10px;
     }
   }
-
+.footer-container{
+  margin-top: 50px;
+}
 
 }
 

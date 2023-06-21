@@ -2,14 +2,13 @@ body {
   //background: brown;
 }
 .ClimbTwo {
-  width: 100%;
-  max-width: 1250px;
-  height: auto;
+  background: right 0,30% url(../../Asset/banneruno.png);
+  background-size: cover;
+  width: 1250px;
+  height: 250px;
   border-radius: 25px;
   margin-top: -120px;
-  filter: brightness(85%);
-  display: block;
-  object-fit: cover;
+  filter : brightness(85%);
 }
 .SecndMainDivImg {
   display: flex;
@@ -56,11 +55,10 @@ body {
   margin-left: 10px;
   height: 240px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 .MainDivAbout {
   margin: 0 0 -60px 0;
-  width: 90%;
-  display: block;
 }
 
 

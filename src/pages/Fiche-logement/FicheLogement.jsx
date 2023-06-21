@@ -10,6 +10,7 @@ import Rates from "../../components/RateStars/RateStars";
 import "../../style/HomeLocation.scss"
 import homeList from '../../DB/homeList.json'
 import Error from "../Error/Error";
+import Footer from "../../components/Footer/Footer"
 
 
 export default function LocationPage() {
@@ -80,11 +81,12 @@ export default function LocationPage() {
 
                             </div>
                         </div>
-
+                        
                     </div>
                 </div>
 
-                }
+                }               
+            <Footer />             
             </>
         );
     } else {

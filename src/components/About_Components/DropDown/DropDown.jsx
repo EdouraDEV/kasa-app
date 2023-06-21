@@ -3,9 +3,9 @@ import Chevron from "../Chevron/Chevron";
 import "../DropDown/DropDown.scss"
 
 function Dropdown({title, content}) {
-    const [setActive, setActiveState] = useState("");
-    const [setHeight, setHeightState] = useState("0px");
-    const [setRotate, setRotateState] = useState("dropdown_icon");
+    const [Active, setActiveState] = useState("");
+    const [Height, setHeightState] = useState("0px");
+    const [Rotate, setRotateState] = useState("dropdown_icon");
 
     const contentRef = useRef(null);
 
@@ -16,9 +16,9 @@ function Dropdown({title, content}) {
     }, [contentRef]);
 
     function toggleDropdown() {
-        setActiveState(setActive === "" ? "active" : "");
-        setHeightState(setActive === "active" ? "0px" : `${contentRef.current.scrollHeight}px`);
-        setRotateState(setActive === "active" ? "dropdown_icon" : "dropdown_icon rotate");
+        setActiveState(Active === "" ? "active" : "");
+        setHeightState(Active === "active" ? "0px" : `${contentRef.current.scrollHeight}px`);
+        setRotateState(Active === "active" ? "dropdown_icon" : "dropdown_icon rotate");
     }
 
     useEffect(() => {
@@ -27,13 +27,13 @@ function Dropdown({title, content}) {
 
     return (
         <div className="dropdown_section">
-            <button className={`dropdown_section_toggle ${setActive}`} onClick={toggleDropdown}>
+            <button className={`dropdown_section_toggle ${Active}`} onClick={toggleDropdown}>
                 <div className="dropdown_section_title">{title}</div>
-                <Chevron className={`${setRotate}`} width={10} fill={"white"} />
+                <Chevron className={`${Rotate}`} width={10} fill={"white"} />
             </button>
             <div
                 ref={contentRef}
-                style={{ maxHeight : `${setHeight}` }}
+                style={{ maxHeight : `${Height}` }}
                 className="dropdown_section_content"
             >
                 <div className="hiddenScroll">

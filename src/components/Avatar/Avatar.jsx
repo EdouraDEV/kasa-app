@@ -1,20 +1,22 @@
 import React from 'react';
-import "../Avatar/Avatar.scss"
+import "./Avatar.scss"
 
 function Avatar(props){
     return (
 
-
-    <div className="avatar-container">
-            <div className="avatar-name">
-                <p>{props.name}</p>
+        <div className="MainDivAvatar">
+            <div className="MainDivAvatar_Name">
+                {/*utilisation de la methode split pour separer le prenom et le nom affiché à coté de l'avatar*/}
+                <div>{props.name.split(' ', 1)}</div>
+                <div>{props.name.split(' ').pop()}</div>
             </div>
-            <div className="avatar-main">
+            <div className="MainDivAvatar_Owner">
                 <img src={props.picture} alt="picture_owner"></img>
             </div>
         </div>
-     )
 
-    }
-    
-    export default Avatar
+    )
+
+}
+
+export default Avatar

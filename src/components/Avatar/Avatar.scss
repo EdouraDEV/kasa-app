@@ -1,5 +1,4 @@
 @import "../../style/variables.scss";
-
 .MainDivAvatar {
   display: flex;
   margin-left: 20px;
@@ -40,14 +39,14 @@
 
   .MainDivAvatar {
     position: absolute;
-    bottom: -120px;
+    bottom: 161px;
     right: 20px;
   }
   .MainDivRate {
     margin-left: -45px;
     position: absolute;
     display: flex;
-    bottom: -70px;
+    bottom: 200px;
     img {
       width: 20px;
     }

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import "../Error/Error.scss"
+import Footer from "../../components/Footer/Footer"
 
 
 function Error () {
@@ -17,7 +18,7 @@ function Error () {
                     fontSize: "20px"
                 }}>Retourner sur la page d'accueil</Link>
             </div>
-
+            <Footer />
         </div>
     )
 }
