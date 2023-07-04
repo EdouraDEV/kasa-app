@@ -35,7 +35,6 @@ function Banner () {
                         to="/home"
                         style={({ isActive }) => ({
                             color: isActive ? '#FF6060' : '#FF6060',
-                            background: isActive ? '#f0f0f0' : '',
                             textDecoration: isActive ? "underline" : '',
                             padding: isActive ? "5px" : '',
                             borderRadius: isActive ? "10px" : ''
@@ -47,8 +46,7 @@ function Banner () {
                         className="BannerDiv_Links"
                         to="/about"
                         style={({ isActive }) => ({
-                            color: isActive ? '#FF6060' : '#FF6060',
-                            background: isActive ? '#f0f0f0' : '',
+                            color: isActive ? '#FF6060' : '#FF6060',                           
                             textDecoration: isActive ? "underline" : '',
                             padding: isActive ? "5px" : '',
                             borderRadius: isActive ? "10px" : ''
